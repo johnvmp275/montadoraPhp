@@ -1,5 +1,8 @@
 <?php
 
+header("Access-Control-Allow-Origin: http://127.0.0.1:5500");
+header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
+
 // verifica se o formulario foi submetido
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //testa o metodo se for o post entre no if
