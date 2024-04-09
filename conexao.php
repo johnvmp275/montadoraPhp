@@ -6,11 +6,14 @@ $username = "root";
 $password = "etec2023";
 $dbname = "lavajato";
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+try {
+    //verifica se a conexao foi estabelecida corretamente
+    $conn = new mysqli($servername, $username, $password, $dbname);
 
-//verifica se a conexao foi estabelecida corretamente
-if ($conn->connect_error) {
-    die("Falha na conexão:" . $conn->connect_error);
+    echo "Conexão bem sucedida!";
+} catch (Exception $e) {
+    
+    die("Erro:" . $e->getMessage());
 }
 
 ?>
