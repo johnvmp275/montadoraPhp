@@ -10,7 +10,6 @@ try {
     //verifica se a conexao foi estabelecida corretamente
     $conn = new mysqli($servername, $username, $password, $dbname);
 
-    echo "Conexão bem sucedida!";
 } catch (Exception $e) {
     
     die("Erro:" . $e->getMessage());
