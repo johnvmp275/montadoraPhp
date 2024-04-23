@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_br">
 
 <head>
         <meta charset="UTF-8">
@@ -139,11 +139,15 @@
                         xhr.open("GET", "buscar_logo.php?idMontadora=" + selectedMontadoraId, true);
                         xhr.send();
                 }else{
-                        logoMontadora.src = "imagens/placeholder.png"
+                        logoMontadora.src = "./imagens/placeholder.png"
                 }
 
         }
       </script>
+
+      <?php
+          include('lstModelo.php');
+      ?>
 
 </body>
 
