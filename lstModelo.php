@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Modelos</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
         .logoMontadora{
             width: 16px;
