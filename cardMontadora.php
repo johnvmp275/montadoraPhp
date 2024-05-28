@@ -19,7 +19,7 @@
             require('conexao.php');
             
             //Consukta o sql para retornar todos os modelos
-            $sql = "SELECT * FROM montadora ORDER BY nomeMontadora";
+            $sql = "SELECT * FROM montadora ORDER BY idMontadora";
             $result = $conn->query($sql);
 
             //verifica se há modelos cadastrados
@@ -27,10 +27,12 @@
                 //loop atraves dos resultados e exibe cada modelo
                 while($linha = $result->fetch_assoc()) {
                     echo "
-                    <div class='card'>
-                        <img src=". $linha['logoMontadora'] .">
-                        <p>".$linha['nomeMontadora']."</p>
-                    </div>
+                    <a href=detalhe.php?".$linha['idMontadora'].">
+                        <div class='card'>
+                            <img src=". $linha['logoMontadora'] .">
+                            <p>".$linha['nomeMontadora']."</p>
+                        </div>
+                    </a>
                     ";
                 }
             }else{
