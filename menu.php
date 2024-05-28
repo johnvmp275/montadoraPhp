@@ -12,7 +12,7 @@
         <li><a href="#">Listar</a>
             <ul id="submenu">
                 <li><a href="lstModelo.php">Modelos</a></li>
-                <li><a href="lstProprietario">Proprietário</a></li>
+                <li><a href="lstProprietario.php">Proprietário</a></li>
                 <li><a href="lstServico.php">Serviços</a></li>
                 <li><a href="lstServicoRealizado.php">Serviços Realizados</a></li>
                 <li><a href="lstVeiculos.php">Veiculos</a></li>

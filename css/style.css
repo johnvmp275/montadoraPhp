@@ -6,6 +6,9 @@
 
 .dropdownmenu {
     background: #a51416;
+    position: sticky;
+    top: 0;
+    z-index: 99999999999999999;
 }
 
 .dropdownmenu ul{
@@ -48,4 +51,37 @@ li:hover{
 
 li:hover #submenu {
     display: flex;
+}
+
+.container{
+    margin: 40px auto;
+}
+
+.card{
+    cursor: pointer;
+}
+
+.card img{
+    max-width: 200px;
+    min-width: 200px;
+    min-height: 200px;
+    object-fit: cover;
+}
+
+.container-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card:not(:hover){
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    opacity: .7s;
+}
+
+.card p{
+    font-weight: bold;
 }
