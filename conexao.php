@@ -11,7 +11,7 @@ try {
     $conn = new mysqli($servername, $username, $password, $dbname);
 
 } catch (Exception $e) {
-    
+
     die("Erro:" . $e->getMessage());
 }
 
